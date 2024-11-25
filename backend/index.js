@@ -299,9 +299,9 @@ app.put('/editnewhouses/:id', (req, res) => {
 
 
 // Serve frontend
-app.use(express.static(path.join(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "../RIC/build")));
 app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+    res.sendFile(path.join(__dirname, "../RIC/build/index.html"));
     
 });
 
