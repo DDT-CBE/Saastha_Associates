@@ -86,15 +86,15 @@ const Buyerpage = () => {
 {buyerdata.map((data) => (
   <div className="buyer-card" key={data._id}>
     <div className="image-container">
-    <button className="arrow left-arrow" onClick={handleLeftArrowClick}>
+    {/* <button className="arrow left-arrow" onClick={handleLeftArrowClick}>
        &lt;
-    </button>
+    </button> */}
     <center>
         <img className="img" src={data.uploadimage[count]} alt="" />
     </center>
-    <button className="arrow right-arrow" onClick={handleRightArrowClick}>
+    {/* <button className="arrow right-arrow" onClick={handleRightArrowClick}>
       &gt;
-    </button>
+    </button> */}
 </div>
 
      
